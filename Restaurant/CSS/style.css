@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* General section styling */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Navbar */
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 15px 25px;
+  font-size: 22px;
+}
+
+.div div:last-child {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e63e3e;
+}
+
+/* Menu Tabs */
+.div1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.div1 h2 {
+  font-size: 10px;
+  cursor: pointer;
+
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.div1 h2:hover {
+  border-bottom: 2px solid #ff4d4d;
+  color: #ff4d4d;
+}
+
+/* Reservation Form */
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flex-row > div {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.menu-items div {
+  flex: 1 1 250px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.menu-items div:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+/* Mobile (<768px) */
+@media (max-width: 768px) {
+  .div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .div1 {
+    flex-direction: row;
+    font-size: 10px;
+    
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
